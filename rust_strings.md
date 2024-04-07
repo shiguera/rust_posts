@@ -1,6 +1,7 @@
 # Rust: How are Strings stored in memory?
 
-<img src="https://miro.medium.com/v2/resize:fit:470/1*LGgyFhWLUwEpYgBNIzjmEw.png" title="" alt="" data-align="center">
+
+<img src="img/crab2.png" title="" alt="" data-align="center">
 
 All of us know how strings are stored in memory. The Rust Book explain it:
 
@@ -18,7 +19,7 @@ The storage result is shown in Figure 1. On the left is the data group in
 the stack, and on the right is the memory on the heap that holds the 
 contents.
 
-<img src="https://miro.medium.com/v2/resize:fit:273/1*OQ2B8gDnHumrj3xfJsC_OQ.png" title="" alt="" data-align="center">
+<img src="img/memory_1.png" title="" alt="" data-align="center">
 
 If you use the method *std::mem::size_of_val()* with a reference to the value of the String *s1*, you will obtain *24*. That method gives us the size of a value in the stack, not in the heap. *24* is equal to *3x8*. Each record in the data group of the String in the stack has a size *usize* that is 8 bytes long in a 64-bit computer.
 
