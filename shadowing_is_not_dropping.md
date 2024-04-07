@@ -1,5 +1,7 @@
 # Rust: Shadowing is not Dropping
 
+<img src="img/dropping_peq.png" title="" alt="" data-align="center">
+
 In Rust, we can *shadow* a variable, creating a new one with the same name. “*The Rust Programming Language*” book shows this example [[shadowing]](https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html#shadowing):
 
   

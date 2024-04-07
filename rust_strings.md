@@ -1,7 +1,5 @@
 # Rust: How are Strings stored in memory?
 
-
-
 <img src="https://miro.medium.com/v2/resize:fit:470/1*LGgyFhWLUwEpYgBNIzjmEw.png" title="" alt="" data-align="center">
 
 All of us know how strings are stored in memory. The Rust Book explain it:
@@ -84,8 +82,6 @@ pub struct String {
 
 The content of the heap memory is a vector of *u8 v*alues. In the previous program, we could add a function to read the String allocated in the heap memory char by char:
 
-
-
 ```rust
 fn main() {
    ...  
@@ -124,8 +120,4 @@ fn read_vec(heap_ptr: *const u8, length: usize) -> Vec<u8> {
 }  
 ```
 
-
-
 Well, it’s a bit of a convoluted way to read and print a string of text on the screen, but at the end of the day, we’re here to play, have fun, and learn a little about Rust, right?
-
-
